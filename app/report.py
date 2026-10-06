@@ -15,12 +15,12 @@ matplotlib.use("Agg")  # без GUI — важно для сервера Render 
 import matplotlib.pyplot as plt
 import pandas as pd
 
-INK = "#1F2A37"
-BLUE = "#5B8DEF"
-RED = "#E5484D"
-AMBER = "#F5A623"
-MINT = "#7BE0C8"
-GRID = "#E6EEF6"
+INK = "#1E293B"
+BLUE = "#2563EB"
+RED = "#DC2626"
+AMBER = "#D97706"
+GREEN = "#059669"
+GRID = "#F1F5F9"
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +77,7 @@ def write_anomalies_png(scored: pd.DataFrame, cfg: dict, path: str | Path) -> No
 
     ax1.plot(ts, value, color=BLUE, linewidth=1.0, label="Потребление, кВт")
     anom = df[df["is_anomaly"] == True]  # noqa: E712
-    sev_colors = {"high": RED, "medium": AMBER, "low": MINT}
+    sev_colors = {"high": RED, "medium": AMBER, "low": GREEN}
     for sev, color in sev_colors.items():
         part = anom[anom["severity"] == sev]
         if len(part):
@@ -110,7 +110,7 @@ def write_anomalies_png(scored: pd.DataFrame, cfg: dict, path: str | Path) -> No
 
 
 # ---------------------------------------------------------------------------
-# HTML-отчёт (самодостаточный, на русском, воздушный стиль)
+# HTML-отчёт (самодостаточный, на русском, простой плоский стиль)
 # ---------------------------------------------------------------------------
 
 _HTML_TMPL = """<!DOCTYPE html>
@@ -118,33 +118,32 @@ _HTML_TMPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Отчёт · обнаружение аномалий</title>
 <style>
-:root {{ --ink:#1F2A37; --muted:#64748B; --line:#E6EEF6; --blue:#5B8DEF; --red:#E5484D;
-        --amber:#F5A623; --mint:#7BE0C8; }}
+:root {{ --ink:#1E293B; --muted:#64748B; --line:#E2E8F0; --blue:#2563EB; --red:#DC2626;
+        --amber:#D97706; --green:#059669; }}
 * {{ box-sizing:border-box; }}
-body {{ margin:0; font-family:'Segoe UI',system-ui,-apple-system,sans-serif; color:var(--ink);
-       background:#F7FAFD; padding:32px 16px; }}
+body {{ margin:0; font-family:system-ui,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink);
+       background:#fff; padding:32px 16px; }}
 .wrap {{ max-width:960px; margin:0 auto; display:grid; gap:20px; }}
-.card {{ background:#fff; border:1px solid var(--line); border-radius:20px;
-        padding:28px 32px; box-shadow:0 10px 40px rgba(91,141,239,.08); }}
+.card {{ background:#fff; border:1px solid var(--line); border-radius:10px;
+        padding:28px 32px; }}
 h1 {{ font-size:22px; margin:0 0 4px; }}
 h2 {{ font-size:16px; margin:0 0 14px; }}
 .sub {{ color:var(--muted); font-size:13px; margin-bottom:18px; }}
 .kpis {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; }}
-.kpi {{ background:#F7FAFD; border:1px solid var(--line); border-radius:14px; padding:14px 16px; }}
+.kpi {{ background:#F8FAFC; border:1px solid var(--line); border-radius:8px; padding:14px 16px; }}
 .kpi b {{ display:block; font-size:22px; }}
 .kpi span {{ color:var(--muted); font-size:12px; }}
 table {{ width:100%; border-collapse:collapse; font-size:13px; }}
 th {{ text-align:left; color:var(--muted); font-weight:600; padding:8px 10px; border-bottom:1px solid var(--line); }}
 td {{ padding:8px 10px; border-bottom:1px solid var(--line); }}
 .badge {{ display:inline-block; padding:2px 10px; border-radius:999px; font-size:12px; }}
-.b-high {{ background:#FEECEC; color:var(--red); }}
-.b-medium {{ background:#FEF4E2; color:#B26A00; }}
-.b-low {{ background:#E6F9F3; color:#1B8A6B; }}
-.note {{ background:#F0F6FF; border:1px solid #D8E6FB; border-radius:12px; padding:12px 16px;
-        font-size:13px; color:#2B4C7E; }}
+.b-high {{ background:#FEF2F2; color:var(--red); }}
+.b-medium {{ background:#FFFBEB; color:var(--amber); }}
+.b-low {{ background:#ECFDF5; color:var(--green); }}
+.note {{ background:#EFF4FF; border:1px solid #DBE5FE; border-radius:8px; padding:12px 16px;
+        font-size:13px; color:#1E40AF; }}
 .foot {{ color:var(--muted); font-size:12px; text-align:center; }}
-.grad {{ background:linear-gradient(135deg,var(--mint),var(--blue));
-        -webkit-background-clip:text; background-clip:text; color:transparent; }}
+.grad {{ color:var(--blue); }}
 </style></head><body><div class="wrap">
 
 <div class="card">

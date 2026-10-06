@@ -16,7 +16,7 @@ const STAGES = [
   "Готово",
 ];
 
-const SEV_COLORS = { high: "#E5484D", medium: "#F5A623", low: "#7BE0C8" };
+const SEV_COLORS = { high: "#DC2626", medium: "#D97706", low: "#059669" };
 const SEV_LABELS = { high: "высокая", medium: "средняя", low: "низкая" };
 
 const state = {
@@ -338,8 +338,8 @@ function drawChart(r) {
         {
           label: "Потребление, кВт",
           data: values,
-          borderColor: "#5B8DEF",
-          backgroundColor: "rgba(91,141,239,0.08)",
+          borderColor: "#2563EB",
+          backgroundColor: "rgba(37,99,235,0.06)",
           borderWidth: 1.2,
           pointRadius: 0,
           tension: 0.25,
@@ -365,7 +365,7 @@ function drawChart(r) {
       interaction: { mode: "nearest", intersect: false },
       plugins: {
         legend: {
-          labels: { usePointStyle: true, pointStyle: "circle", boxWidth: 8, font: { family: "Manrope", size: 12 } },
+          labels: { usePointStyle: true, pointStyle: "circle", boxWidth: 8, font: { size: 12 } },
         },
         tooltip: {
           callbacks: {
@@ -379,13 +379,13 @@ function drawChart(r) {
       },
       scales: {
         x: {
-          ticks: { maxTicksLimit: 9, maxRotation: 0, font: { size: 10.5 }, color: "#6B7A90" },
+          ticks: { maxTicksLimit: 9, maxRotation: 0, font: { size: 10.5 }, color: "#64748B" },
           grid: { display: false },
         },
         y: {
           title: { display: true, text: "кВт", font: { size: 11 } },
-          ticks: { font: { size: 10.5 }, color: "#6B7A90" },
-          grid: { color: "#EDF3FA" },
+          ticks: { font: { size: 10.5 }, color: "#64748B" },
+          grid: { color: "#F1F5F9" },
         },
       },
     },

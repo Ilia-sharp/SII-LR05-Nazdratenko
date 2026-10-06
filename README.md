@@ -117,8 +117,8 @@ SII-LR05-Nazdratenko/
 │   ├── report.py           #   CSV / JSON / PNG / HTML-артефакты
 │   └── main.py             #   FastAPI: /, /api/run, /api/jobs, /api/results…
 ├── static/                 # фронтенд (ванильный JS + Chart.js)
-│   ├── index.html          #   логотип Nazdratenko, воздушный UI
-│   ├── style.css           #   мятно-голубая палитра, плавные переходы
+│   ├── index.html          #   логотип Nazdratenko, простой плоский UI
+│   ├── style.css           #   синий акцент на белом, без теней и градиентов
 │   └── app.js              #   прогресс по стадиям, график, таблицы
 ├── data/
 │   ├── energy_hourly.csv   # демо-сэмпл UCI (ноя–дек 2008), CC BY 4.0
