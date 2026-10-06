@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# результаты веб-прогонов (CLI-прогона outputs/ остаётся в репо)
+outputs/runs/
+
+# данные, которые не должны попасть в git
+data/_uci_cache.zip
+
+# системное
+.DS_Store
+*.log
+nohup.out
+.env

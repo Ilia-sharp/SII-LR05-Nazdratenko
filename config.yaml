@@ -1,0 +1,37 @@
+# =============================================================================
+# Конфигурация сервиса обнаружения аномалий — ЛР №5, вариант 16
+# (dataset: energy · метод: z-score · окно: 24)
+#
+# ПРИНЦИП: пороги и параметры НИКОГДА не захардкожены в коде.
+# Приоритет значений: переменные окружения > этот файл > встроенные дефолты.
+# =============================================================================
+
+service:
+  model_version: anomaly-v1
+  title: "Nazdratenko · Anomaly Detection"
+
+data:
+  # Демонстрационный ряд, который лежит в репозитории (UCI, CC BY 4.0)
+  sample_path: data/energy_hourly.csv
+  max_interp_gap: 3        # интерполировать ТОЛЬКО дыры <= 3 точек подряд
+  monitor_freshness: false # true — для живых потоков: следить за «свежестью» данных
+  stale_after_hours: 48    # если данные не обновлялись дольше — статус «stale»
+
+detection:
+  method: zscore           # метод индивидуального варианта 16
+  window: 24               # окно из задания (24 часа для часового ряда)
+  threshold: 3.0           # порог тревоги, в сигмах (env: ANOMALY_THRESHOLD)
+  severity:                # границы серьёзности — кратные порогу
+    medium: 1.1            # medium: score >= threshold * 1.10 (то есть 3.3σ)
+    high: 1.3              # high:   score >= threshold * 1.30 (то есть 3.9σ)
+
+baseline:
+  yesterday_threshold: 3.0 # порог для наивного baseline «вчера»
+  global_zscore: true      # второй baseline: глобальный z-score (бонус)
+
+output:
+  dir: outputs             # артефакты CLI-прогона (попадают в репозиторий)
+  runs_dir: outputs/runs   # результаты веб-прогонов (в .gitignore)
+
+server:
+  max_upload_mb: 15        # ограничение размера загружаемого CSV

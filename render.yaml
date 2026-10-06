@@ -1,0 +1,27 @@
+# =============================================================================
+# Render Blueprint — ЛР №5, вариант 16 (Nazdratenko)
+# Тариф: Free ($0/мес · 0.1 CPU · 512 MB RAM)
+#
+# Деплой: render.com → New + → Blueprint → выберите репозиторий —
+# всё подхватится из этого файла автоматически.
+# =============================================================================
+
+services:
+  - type: web
+    name: sii-lr05-nazdratenko
+    runtime: python
+    plan: free
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: MPLBACKEND
+        value: "Agg"          # matplotlib без GUI на сервере
+      - key: PIPELINE_PACE
+        value: "0.25"         # пауза между стадиями — плавный прогресс на сайте
+      - key: ANOMALY_THRESHOLD
+        value: "3.0"          # порог; можно менять здесь, не трогая код
+      - key: ANOMALY_WINDOW
+        value: "24"           # окно варианта 16
