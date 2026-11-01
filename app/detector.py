@@ -1,9 +1,14 @@
 """Детекция аномалий: метод варианта 16 и наивные baseline'ы.
 
 Метод варианта 16 — скользящий z-score:
-    score(t) = | v(t) - mean(окно W до t) | / std(окно W до t)
+    score(t) = | v(t) - mean(v[t-W+1 … t]) | / std(v[t-W+1 … t])
     is_anomaly(t) = score(t) > threshold        (порог — из конфигурации)
-    W = 24 (индивидуальное задание), первые W точек — «прогрев», не скорятся.
+    W = 24 (индивидуальное задание), первые W-1 точек — «прогрев», не скорятся.
+
+Окно включает текущую точку (как в pandas .rolling(W)). Побочный эффект: выброс
+сам попадает в mean/std и частично «размывает» свой score — теоретический
+максимум равен (W-1)/sqrt(W) ≈ 4.8σ при W = 24. Это осознанный компромисс:
+детектор ловит смену режима потребления, а не одиночный шумовой выброс.
 
 Baseline'ы для сравнения:
     1) наивный прогноз «вчера»: v_hat(t) = v(t - W) — аномалия = резкое
@@ -34,13 +39,6 @@ def severity_of(score: float, threshold: float, bands: dict) -> str:
     return "low"
 
 
-def _empty_frame(index: pd.DatetimeIndex) -> pd.DataFrame:
-    return pd.DataFrame(
-        {"value": index.to_series(index=index).map(lambda _: np.nan)},
-        index=index,
-    )
-
-
 def rolling_zscore(
     grid: pd.DataFrame,
     window: int,
@@ -48,7 +46,7 @@ def rolling_zscore(
     bands: dict,
     progress=None,
 ) -> tuple[pd.DataFrame, bool]:
-    """Метод варианта: скользящий z-score с окном `window`.
+    """Метод варианта: скользящий z-score с окном `window` (включая текущую точку).
 
     Возвращает (scored_df, flatline_flag). scored_df содержит все точки ряда,
     но первые `window - 1` (прогрев) и NaN-точки имеют score = NaN.

@@ -1,0 +1,1932 @@
+{
+  "model_version": "anomaly-v1",
+  "method": "zscore",
+  "window": 24,
+  "threshold": 3.0,
+  "generated_at": "2026-11-01T15:46:25+00:00",
+  "stats": {
+    "points_total": 34589,
+    "points_missing": 420,
+    "gaps_total": 8,
+    "gaps_interpolated": 1,
+    "gaps_left_blank": 7,
+    "first_ts": "2006-12-16T17:00:00",
+    "last_ts": "2010-11-26T21:00:00",
+    "step": "0 days 01:00:00",
+    "mean": 1.0917150846396917,
+    "std": 0.8976089070715539,
+    "min": 0.12400000000000001,
+    "max": 6.560533333333334
+  },
+  "status": {
+    "stale": false,
+    "flatline": false,
+    "notes": []
+  },
+  "items": [
+    {
+      "timestamp": "2006-12-28T21:00:00",
+      "value": 5.0353,
+      "score": 3.1723,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-01-01T14:00:00",
+      "value": 1.2944,
+      "score": 3.629,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-01-02T17:00:00",
+      "value": 2.1362,
+      "score": 3.1002,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-01-04T00:00:00",
+      "value": 3.3751,
+      "score": 3.6879,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-01-07T13:00:00",
+      "value": 3.3319,
+      "score": 3.6196,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-01-20T13:00:00",
+      "value": 4.251,
+      "score": 3.1922,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-01-21T19:00:00",
+      "value": 5.3304,
+      "score": 3.0914,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-01-21T20:00:00",
+      "value": 6.0766,
+      "score": 3.0133,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-02-06T21:00:00",
+      "value": 2.7791,
+      "score": 3.0686,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-02-09T22:00:00",
+      "value": 3.8358,
+      "score": 3.0159,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-02-13T21:00:00",
+      "value": 3.5453,
+      "score": 3.1011,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-02-25T14:00:00",
+      "value": 1.2028,
+      "score": 3.6737,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-03-03T19:00:00",
+      "value": 1.5386,
+      "score": 3.6618,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-03-03T20:00:00",
+      "value": 1.8136,
+      "score": 3.2011,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-04T16:00:00",
+      "value": 3.3447,
+      "score": 3.3357,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-03-04T17:00:00",
+      "value": 4.0872,
+      "score": 3.0995,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-07T19:00:00",
+      "value": 4.8526,
+      "score": 3.2504,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-10T10:00:00",
+      "value": 3.1123,
+      "score": 3.1617,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-14T19:00:00",
+      "value": 3.7065,
+      "score": 3.1053,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-20T21:00:00",
+      "value": 5.2927,
+      "score": 3.2015,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-27T20:00:00",
+      "value": 2.8747,
+      "score": 3.2748,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-03-31T10:00:00",
+      "value": 5.1611,
+      "score": 3.07,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-04-09T15:00:00",
+      "value": 1.182,
+      "score": 3.1778,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-04-09T19:00:00",
+      "value": 2.4147,
+      "score": 3.4363,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-10T23:00:00",
+      "value": 1.8182,
+      "score": 3.1697,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-04-13T22:00:00",
+      "value": 1.0622,
+      "score": 3.3391,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-14T23:00:00",
+      "value": 1.1552,
+      "score": 3.4678,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-15T15:00:00",
+      "value": 1.6891,
+      "score": 3.5952,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-16T21:00:00",
+      "value": 2.9035,
+      "score": 3.4019,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-20T21:00:00",
+      "value": 2.8843,
+      "score": 3.8222,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-04-27T21:00:00",
+      "value": 3.1033,
+      "score": 3.5367,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-05-04T20:00:00",
+      "value": 3.1561,
+      "score": 3.1013,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-05-08T12:00:00",
+      "value": 4.7191,
+      "score": 3.7296,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-05-11T21:00:00",
+      "value": 2.1751,
+      "score": 3.0581,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-05-18T20:00:00",
+      "value": 3.9857,
+      "score": 3.3254,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-05-22T20:00:00",
+      "value": 2.8976,
+      "score": 3.0482,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-05-27T14:00:00",
+      "value": 3.8568,
+      "score": 3.1704,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-05-29T21:00:00",
+      "value": 2.4802,
+      "score": 3.4221,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-06-02T09:00:00",
+      "value": 2.4007,
+      "score": 3.3276,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-06-08T10:00:00",
+      "value": 3.1213,
+      "score": 3.3567,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-06-12T18:00:00",
+      "value": 2.0773,
+      "score": 3.4584,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-06-14T19:00:00",
+      "value": 3.233,
+      "score": 3.251,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-06-20T21:00:00",
+      "value": 3.2391,
+      "score": 3.2567,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-06-23T17:00:00",
+      "value": 1.2167,
+      "score": 3.3754,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-06-25T21:00:00",
+      "value": 3.5683,
+      "score": 3.9324,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-06-26T22:00:00",
+      "value": 3.5618,
+      "score": 3.9179,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-07-02T20:00:00",
+      "value": 2.0822,
+      "score": 3.4182,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-02T21:00:00",
+      "value": 2.6667,
+      "score": 3.2839,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-03T22:00:00",
+      "value": 3.9486,
+      "score": 3.811,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-06T21:00:00",
+      "value": 4.2722,
+      "score": 3.3922,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-10T22:00:00",
+      "value": 3.2528,
+      "score": 3.3281,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-12T19:00:00",
+      "value": 2.1524,
+      "score": 3.6142,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-12T21:00:00",
+      "value": 2.8589,
+      "score": 3.0195,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-14T10:00:00",
+      "value": 1.7914,
+      "score": 3.1224,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-14T19:00:00",
+      "value": 3.7519,
+      "score": 3.6596,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-17T08:00:00",
+      "value": 2.0149,
+      "score": 3.1561,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-19T20:00:00",
+      "value": 1.505,
+      "score": 3.0706,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-20T18:00:00",
+      "value": 2.8128,
+      "score": 3.6767,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-26T08:00:00",
+      "value": 1.6677,
+      "score": 4.0016,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-07-26T19:00:00",
+      "value": 2.4731,
+      "score": 3.2855,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-30T06:00:00",
+      "value": 0.9251,
+      "score": 3.2296,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-07-30T18:00:00",
+      "value": 1.1914,
+      "score": 3.5972,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-07-31T12:00:00",
+      "value": 2.0913,
+      "score": 3.632,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-08-12T23:00:00",
+      "value": 4.6344,
+      "score": 3.5125,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-08-19T15:00:00",
+      "value": 2.3622,
+      "score": 4.2397,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-08-19T16:00:00",
+      "value": 3.6961,
+      "score": 3.8581,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-08-22T19:00:00",
+      "value": 3.2391,
+      "score": 3.0394,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-08-27T21:00:00",
+      "value": 2.7933,
+      "score": 3.1015,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-08-30T19:00:00",
+      "value": 2.8546,
+      "score": 3.4224,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-09-11T21:00:00",
+      "value": 2.4116,
+      "score": 3.1756,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-09-11T22:00:00",
+      "value": 3.3426,
+      "score": 3.4591,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-09-16T20:00:00",
+      "value": 3.814,
+      "score": 3.2179,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-09-17T21:00:00",
+      "value": 5.7358,
+      "score": 3.6061,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-09-26T21:00:00",
+      "value": 4.8219,
+      "score": 3.201,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-08T21:00:00",
+      "value": 2.689,
+      "score": 3.0517,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-11T20:00:00",
+      "value": 4.3184,
+      "score": 3.0704,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-13T19:00:00",
+      "value": 4.7328,
+      "score": 3.487,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-10-23T17:00:00",
+      "value": 4.5084,
+      "score": 3.3252,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-10-27T08:00:00",
+      "value": 2.8668,
+      "score": 3.171,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-27T10:00:00",
+      "value": 4.3368,
+      "score": 3.1604,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-29T11:00:00",
+      "value": 1.2306,
+      "score": 3.0502,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-10-30T13:00:00",
+      "value": 3.357,
+      "score": 4.3249,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-10-31T13:00:00",
+      "value": 3.6736,
+      "score": 3.4511,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-11-02T11:00:00",
+      "value": 2.2435,
+      "score": 3.8587,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2007-11-02T12:00:00",
+      "value": 2.6564,
+      "score": 3.2622,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-11-04T17:00:00",
+      "value": 2.504,
+      "score": 3.9444,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-11-04T18:00:00",
+      "value": 4.8436,
+      "score": 4.0833,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2007-11-07T19:00:00",
+      "value": 4.4834,
+      "score": 3.1109,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-11-12T20:00:00",
+      "value": 4.7598,
+      "score": 3.057,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2007-12-27T19:00:00",
+      "value": 5.1752,
+      "score": 3.1753,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-01-12T18:00:00",
+      "value": 5.1968,
+      "score": 3.1506,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-01-14T20:00:00",
+      "value": 5.1369,
+      "score": 3.358,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-01-26T19:00:00",
+      "value": 6.0138,
+      "score": 3.4997,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-01-31T20:00:00",
+      "value": 3.8069,
+      "score": 3.2146,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-02-02T19:00:00",
+      "value": 6.496,
+      "score": 3.5918,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-02-27T22:00:00",
+      "value": 1.235,
+      "score": 3.1905,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-02-29T10:00:00",
+      "value": 2.1214,
+      "score": 3.9964,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-02-29T11:00:00",
+      "value": 2.8479,
+      "score": 3.5731,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-03-01T20:00:00",
+      "value": 2.3046,
+      "score": 3.7484,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-03-02T11:00:00",
+      "value": 2.9585,
+      "score": 3.1839,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-03-04T16:00:00",
+      "value": 3.4114,
+      "score": 3.6621,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-03-07T11:00:00",
+      "value": 4.5097,
+      "score": 3.1521,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-03-13T20:00:00",
+      "value": 4.6837,
+      "score": 3.1623,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-03-18T16:00:00",
+      "value": 3.7211,
+      "score": 3.0342,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-04-12T18:00:00",
+      "value": 5.6564,
+      "score": 3.1222,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-04-15T12:00:00",
+      "value": 4.4636,
+      "score": 3.1319,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-04-17T20:00:00",
+      "value": 3.0369,
+      "score": 3.1038,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-04-17T21:00:00",
+      "value": 3.8928,
+      "score": 3.1992,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-04-20T21:00:00",
+      "value": 5.6713,
+      "score": 3.6532,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-04-25T13:00:00",
+      "value": 3.0978,
+      "score": 3.4194,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-04-26T21:00:00",
+      "value": 1.8937,
+      "score": 3.772,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-04-29T10:00:00",
+      "value": 2.2723,
+      "score": 4.1366,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-04-29T11:00:00",
+      "value": 2.5772,
+      "score": 3.3172,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-04-29T12:00:00",
+      "value": 4.5892,
+      "score": 3.7892,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-05-02T09:00:00",
+      "value": 1.5289,
+      "score": 3.5477,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-05-02T10:00:00",
+      "value": 2.79,
+      "score": 3.9667,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-05-04T18:00:00",
+      "value": 3.3704,
+      "score": 3.523,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-05-06T15:00:00",
+      "value": 3.8106,
+      "score": 3.4466,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-05-10T16:00:00",
+      "value": 3.9303,
+      "score": 3.2365,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-05-20T12:00:00",
+      "value": 3.8765,
+      "score": 3.2612,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-05-30T11:00:00",
+      "value": 3.414,
+      "score": 3.1488,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-05-31T13:00:00",
+      "value": 2.3637,
+      "score": 3.0325,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-06-03T20:00:00",
+      "value": 3.4922,
+      "score": 3.1487,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-06-06T20:00:00",
+      "value": 3.0636,
+      "score": 3.9041,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-06-15T13:00:00",
+      "value": 4.2955,
+      "score": 3.236,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-07-01T19:00:00",
+      "value": 2.9667,
+      "score": 4.1464,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-07-03T21:00:00",
+      "value": 3.6561,
+      "score": 3.7822,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-07-08T21:00:00",
+      "value": 2.0599,
+      "score": 3.0909,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-07-12T13:00:00",
+      "value": 2.8162,
+      "score": 3.1055,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-07-12T15:00:00",
+      "value": 3.9929,
+      "score": 3.3197,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-07-16T21:00:00",
+      "value": 3.8392,
+      "score": 4.1535,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-07-24T21:00:00",
+      "value": 2.8657,
+      "score": 3.4726,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-07-29T08:00:00",
+      "value": 1.9135,
+      "score": 3.8285,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-08-02T20:00:00",
+      "value": 0.9387,
+      "score": 3.2151,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-08-03T08:00:00",
+      "value": 1.0047,
+      "score": 3.0047,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-08-04T09:00:00",
+      "value": 0.9618,
+      "score": 3.1026,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-08-04T18:00:00",
+      "value": 2.1712,
+      "score": 3.8962,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-08-04T19:00:00",
+      "value": 2.5661,
+      "score": 3.2894,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-08-09T15:00:00",
+      "value": 1.2446,
+      "score": 4.6275,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-08-10T19:00:00",
+      "value": 0.4147,
+      "score": 3.6908,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-08-31T14:00:00",
+      "value": 1.6119,
+      "score": 4.6741,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-08-31T15:00:00",
+      "value": 2.4019,
+      "score": 3.9146,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-09-04T21:00:00",
+      "value": 2.8183,
+      "score": 3.1224,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-09-21T12:00:00",
+      "value": 3.2854,
+      "score": 3.729,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-09-22T20:00:00",
+      "value": 4.2912,
+      "score": 3.6476,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-10-12T19:00:00",
+      "value": 4.9077,
+      "score": 3.6688,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-10-17T20:00:00",
+      "value": 4.9791,
+      "score": 3.3451,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-10-23T07:00:00",
+      "value": 4.0411,
+      "score": 3.0943,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-10-28T18:00:00",
+      "value": 1.7671,
+      "score": 3.8012,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-10-28T19:00:00",
+      "value": 2.8276,
+      "score": 3.8099,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-11-02T03:00:00",
+      "value": 1.4534,
+      "score": 3.0858,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-11-04T17:00:00",
+      "value": 2.1329,
+      "score": 3.8109,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-11-04T18:00:00",
+      "value": 3.736,
+      "score": 3.9675,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2008-11-04T20:00:00",
+      "value": 4.4461,
+      "score": 3.0275,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-11-15T15:00:00",
+      "value": 4.1835,
+      "score": 3.2396,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-11-18T07:00:00",
+      "value": 3.2643,
+      "score": 3.0523,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-11-22T21:00:00",
+      "value": 3.8932,
+      "score": 3.3308,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2008-11-30T20:00:00",
+      "value": 5.9305,
+      "score": 3.0294,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2008-12-29T18:00:00",
+      "value": 1.1984,
+      "score": 3.0651,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-01-01T20:00:00",
+      "value": 3.4588,
+      "score": 3.5414,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-01-24T11:00:00",
+      "value": 5.0734,
+      "score": 3.2681,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-02-11T12:00:00",
+      "value": 4.2493,
+      "score": 3.0482,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-02-16T18:00:00",
+      "value": 1.955,
+      "score": 3.3824,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-02-16T19:00:00",
+      "value": 3.1627,
+      "score": 3.7721,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-02-20T17:00:00",
+      "value": 3.4248,
+      "score": 3.9222,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-02-22T16:00:00",
+      "value": 3.7188,
+      "score": 4.4659,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-02-22T17:00:00",
+      "value": 4.8294,
+      "score": 3.6492,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-03-06T20:00:00",
+      "value": 3.3757,
+      "score": 3.0881,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-03-20T19:00:00",
+      "value": 3.1276,
+      "score": 3.2319,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-03-24T19:00:00",
+      "value": 3.7412,
+      "score": 3.0417,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-04-12T20:00:00",
+      "value": 5.0983,
+      "score": 3.3285,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-04-19T21:00:00",
+      "value": 3.1869,
+      "score": 3.3487,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-04-23T21:00:00",
+      "value": 3.0597,
+      "score": 4.0008,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-04-25T10:00:00",
+      "value": 3.2228,
+      "score": 3.7434,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-05-03T20:00:00",
+      "value": 4.2653,
+      "score": 3.4797,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-05-10T16:00:00",
+      "value": 3.7206,
+      "score": 3.649,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-05-21T12:00:00",
+      "value": 2.8598,
+      "score": 3.1135,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-06-08T19:00:00",
+      "value": 2.4233,
+      "score": 3.1038,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-06-17T21:00:00",
+      "value": 2.3328,
+      "score": 3.0024,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-06-21T19:00:00",
+      "value": 1.4966,
+      "score": 3.2377,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-06-21T20:00:00",
+      "value": 2.0501,
+      "score": 3.3454,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-08T08:00:00",
+      "value": 3.0504,
+      "score": 3.0093,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-07-13T09:00:00",
+      "value": 1.14,
+      "score": 3.2446,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-07-14T11:00:00",
+      "value": 1.2341,
+      "score": 3.0138,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-07-14T12:00:00",
+      "value": 2.7453,
+      "score": 4.0674,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-07-16T17:00:00",
+      "value": 1.1898,
+      "score": 3.1674,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-07-20T13:00:00",
+      "value": 1.8275,
+      "score": 3.6518,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-22T19:00:00",
+      "value": 1.3132,
+      "score": 3.388,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-25T08:00:00",
+      "value": 1.3508,
+      "score": 3.5557,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-27T09:00:00",
+      "value": 1.3537,
+      "score": 3.0249,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-07-28T12:00:00",
+      "value": 1.5792,
+      "score": 3.4842,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-30T18:00:00",
+      "value": 1.59,
+      "score": 3.7275,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-07-31T19:00:00",
+      "value": 2.9812,
+      "score": 3.2824,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-01T19:00:00",
+      "value": 1.4531,
+      "score": 3.0901,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-03T05:00:00",
+      "value": 1.1812,
+      "score": 3.2479,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-05T04:00:00",
+      "value": 1.0669,
+      "score": 3.1706,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-05T16:00:00",
+      "value": 1.2111,
+      "score": 3.3414,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-08-06T04:00:00",
+      "value": 1.1637,
+      "score": 3.1047,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-07T17:00:00",
+      "value": 1.0875,
+      "score": 3.5175,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-08-09T17:00:00",
+      "value": 2.2342,
+      "score": 4.3715,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-08-09T18:00:00",
+      "value": 2.7101,
+      "score": 3.5347,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-08-10T22:00:00",
+      "value": 2.7808,
+      "score": 3.4032,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-08-15T13:00:00",
+      "value": 1.2914,
+      "score": 3.0561,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-15T15:00:00",
+      "value": 1.6376,
+      "score": 3.1413,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-15T16:00:00",
+      "value": 2.6086,
+      "score": 3.6452,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-08-18T21:00:00",
+      "value": 3.8541,
+      "score": 4.1273,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2009-08-21T07:00:00",
+      "value": 1.6922,
+      "score": 3.1152,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-08-28T08:00:00",
+      "value": 1.8235,
+      "score": 3.4638,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-09-12T21:00:00",
+      "value": 4.3003,
+      "score": 3.1477,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-09-15T20:00:00",
+      "value": 3.5166,
+      "score": 3.0688,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-09-27T20:00:00",
+      "value": 2.7971,
+      "score": 3.2118,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-10-17T16:00:00",
+      "value": 4.6632,
+      "score": 3.0269,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-10-23T15:00:00",
+      "value": 4.0253,
+      "score": 3.6786,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-11-11T17:00:00",
+      "value": 4.5362,
+      "score": 3.3633,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2009-11-26T20:00:00",
+      "value": 3.8142,
+      "score": 3.2587,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-12-12T17:00:00",
+      "value": 4.2413,
+      "score": 3.1305,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-12-21T20:00:00",
+      "value": 4.2114,
+      "score": 3.0208,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-12-24T15:00:00",
+      "value": 3.5087,
+      "score": 3.2472,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2009-12-24T16:00:00",
+      "value": 4.5333,
+      "score": 3.2156,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-01-02T17:00:00",
+      "value": 2.3318,
+      "score": 3.6292,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-01-02T18:00:00",
+      "value": 3.5252,
+      "score": 3.658,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-01-15T20:00:00",
+      "value": 5.3368,
+      "score": 3.5596,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-01-23T18:00:00",
+      "value": 5.2655,
+      "score": 3.3109,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-01-25T19:00:00",
+      "value": 3.7133,
+      "score": 3.0221,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-01-27T17:00:00",
+      "value": 4.0798,
+      "score": 3.1716,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-02-15T20:00:00",
+      "value": 4.6196,
+      "score": 3.1506,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-02-21T11:00:00",
+      "value": 5.0908,
+      "score": 3.2182,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-03-01T11:00:00",
+      "value": 2.3966,
+      "score": 4.055,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2010-03-03T08:00:00",
+      "value": 1.5217,
+      "score": 3.0932,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-03-05T13:00:00",
+      "value": 2.0109,
+      "score": 3.1673,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-03-07T17:00:00",
+      "value": 2.4349,
+      "score": 4.0758,
+      "is_anomaly": true,
+      "severity": "high"
+    },
+    {
+      "timestamp": "2010-03-07T18:00:00",
+      "value": 2.5753,
+      "score": 3.1347,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-04-11T20:00:00",
+      "value": 3.8161,
+      "score": 3.444,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-04-17T10:00:00",
+      "value": 3.5855,
+      "score": 3.0229,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-04-24T15:00:00",
+      "value": 1.2421,
+      "score": 3.0832,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-04-24T17:00:00",
+      "value": 1.6808,
+      "score": 3.2807,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-04-24T18:00:00",
+      "value": 2.4453,
+      "score": 3.516,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-04-26T15:00:00",
+      "value": 1.7114,
+      "score": 3.7264,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-04-30T12:00:00",
+      "value": 1.9986,
+      "score": 3.3362,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-04-30T17:00:00",
+      "value": 2.8436,
+      "score": 3.2655,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-06-23T21:00:00",
+      "value": 3.9411,
+      "score": 3.1699,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-07-01T00:00:00",
+      "value": 3.329,
+      "score": 3.3397,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-07-10T09:00:00",
+      "value": 1.9883,
+      "score": 3.0334,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-07-14T22:00:00",
+      "value": 3.1089,
+      "score": 3.4513,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-07-21T23:00:00",
+      "value": 2.8781,
+      "score": 3.6993,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-07-24T21:00:00",
+      "value": 1.7543,
+      "score": 3.5062,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-07-25T23:00:00",
+      "value": 2.8314,
+      "score": 3.4583,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-07-30T07:00:00",
+      "value": 1.1503,
+      "score": 3.3281,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-03T16:00:00",
+      "value": 1.3614,
+      "score": 3.7167,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-06T03:00:00",
+      "value": 1.2259,
+      "score": 3.2746,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-08T02:00:00",
+      "value": 1.1826,
+      "score": 3.5157,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-10T01:00:00",
+      "value": 1.249,
+      "score": 3.3756,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-10T13:00:00",
+      "value": 1.1549,
+      "score": 3.0137,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-11T01:00:00",
+      "value": 1.1349,
+      "score": 3.144,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-13T12:00:00",
+      "value": 1.1694,
+      "score": 3.1967,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-14T00:00:00",
+      "value": 1.1578,
+      "score": 3.1139,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-15T11:00:00",
+      "value": 1.2266,
+      "score": 3.3384,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-15T16:00:00",
+      "value": 1.8561,
+      "score": 3.4782,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-24T08:00:00",
+      "value": 1.4222,
+      "score": 3.2546,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-08-25T08:00:00",
+      "value": 1.8391,
+      "score": 3.5791,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-08-27T09:00:00",
+      "value": 1.6963,
+      "score": 3.066,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-09-07T19:00:00",
+      "value": 2.7609,
+      "score": 3.0072,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-10-02T20:00:00",
+      "value": 3.9403,
+      "score": 3.1344,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-10-10T19:00:00",
+      "value": 3.4918,
+      "score": 3.0369,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-10-17T16:00:00",
+      "value": 1.1914,
+      "score": 3.1662,
+      "is_anomaly": true,
+      "severity": "low"
+    },
+    {
+      "timestamp": "2010-10-17T19:00:00",
+      "value": 2.0301,
+      "score": 3.7929,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-10-17T20:00:00",
+      "value": 2.454,
+      "score": 3.3498,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-10-26T11:00:00",
+      "value": 3.0101,
+      "score": 3.7947,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-10-30T11:00:00",
+      "value": 3.1332,
+      "score": 3.3968,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-11-04T08:00:00",
+      "value": 4.4189,
+      "score": 3.3248,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-11-20T18:00:00",
+      "value": 5.6268,
+      "score": 3.6909,
+      "is_anomaly": true,
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2010-11-22T08:00:00",
+      "value": 2.5902,
+      "score": 3.0133,
+      "is_anomaly": true,
+      "severity": "low"
+    }
+  ]
+}

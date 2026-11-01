@@ -3,7 +3,7 @@
   "method": "zscore",
   "window": 24,
   "threshold": 3.0,
-  "generated_at": "2026-10-06T10:24:02+00:00",
+  "generated_at": "2026-11-01T15:47:57+00:00",
   "stats": {
     "points_total": 1464,
     "points_missing": 0,

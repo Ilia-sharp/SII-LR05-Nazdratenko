@@ -45,6 +45,31 @@ def _demo_path() -> Path:
     return BASE_DIR / CFG["data"]["sample_path"]
 
 
+def _freshness(path: Path) -> dict:
+    """Свежесть ряда: возраст последней точки (для живых потоков).
+
+    Флаг stale имеет смысл только при data.monitor_freshness = true —
+    для исторического демо-ряда он выключен и остаётся None.
+    """
+    info = {
+        "monitor_freshness": bool(CFG["data"].get("monitor_freshness")),
+        "stale_after_hours": float(CFG["data"].get("stale_after_hours", 48)),
+        "age_hours": None,
+        "stale": None,
+    }
+    if not path.exists():
+        return info
+    try:
+        last = pd.Timestamp(pd.read_csv(path)["timestamp"].iloc[-1])
+        age = (pd.Timestamp.now().tz_localize(None) - last).total_seconds() / 3600
+        info["age_hours"] = round(age, 1)
+        if info["monitor_freshness"]:
+            info["stale"] = bool(age > info["stale_after_hours"])
+    except Exception:  # pragma: no cover - демо-файл всегда валиден
+        pass
+    return info
+
+
 @app.get("/")
 def index() -> FileResponse:
     return FileResponse(STATIC_DIR / "index.html")
@@ -70,6 +95,7 @@ def health() -> dict:
         "window": CFG["detection"]["window"],
         "uptime_s": round(time.time() - START_TIME, 1),
         "demo_data": demo_info,
+        "freshness": _freshness(demo),
     }
 
 
